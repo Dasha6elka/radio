@@ -47,7 +47,7 @@ function App() {
     let output = '';
     blocks.forEach(block => {
       if (block.name !== '' && block.text !== '') {
-        output += `${block.date.getDate()}.${block.date.getMonth()}.${block.date.getFullYear()} ${block.date.getHours()}:${block.date.getMinutes()}:${block.date.getSeconds()} \n ${block.name} \n ${block.text}\n\n`;
+        output += `${block.date.getDate()}.${block.date.getMonth() + 1}.${block.date.getFullYear()} ${block.date.getHours()}:${block.date.getMinutes()}:${block.date.getSeconds()} \n ${block.name} \n ${block.text}\n\n`;
       }
     });
 
